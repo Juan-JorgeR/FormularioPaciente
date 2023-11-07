@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Centro Médico X</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/thema.css">
+    </head>
+    <body>
+        <header>
+            <h1>Centro Médico X</h1>
+            <figure>
+                <img id="flechaMenuDinamico" src="imagenes/arrow.svg">
+            </figure>
+        </header>
+        <main>
+            <section id="DatosPersonales">
+                <form method="post" action="">
+                    <legend>Datos Personales</legend>
+                    <fieldset>
+                        <ul>
+                            <li><input id="nombre" placeholder="Nombre" type="text"></li>
+                            <li><input id="apellido" placeholder="Apellido" type="text"></li>
+                            <li><input id="cedula" placeholder="Cédula" type="text"></li>
+                            <li><input id="telefono" placeholder="Teléfono"></li>
+                            <li><input id="direccion" placeholder="Dirección"></li>
+                            <li>
+                                <ol>
+                                    <li><input type="radio" name="sexo" value="femenino"> Femenino </li>
+                                    <li><input type="radio" name="sexo" value="masculino"> Masculino </li>
+                                </ol>
+                            </li>
+                            <li><label>Fecha de Nacimiento: </label></li>
+                            <li><input id="fechaNacimiento" type="date"></li>
+                            <li><input id="enviar" type="submit" value="Enviar"></li>
+                        </ul>
+                    </fieldset>
+                </form>
+            </section>
+            <section id="CondicionesPreExistentes">
+                <form method="post" action="">
+                    <legend>Condiciones Pre-Existentes</legend>
+                    <fieldset>
+                        <ul>
+                            <li><input name="cedula" id="cedula" placeholder="Cédula" type="text"></li>
+                        </ul>
+                        <div id="panelDeCondiciones">
+                            <ul id="condiciones">
+                                
+                            </ul>
+                        </div>
+                        <ul>
+                            <li>
+                                <textarea id="comentario" name="comentario" rows="10" cols="45" placeholder="Leave us a comment."></textarea>
+                            </li>
+                            <li><input type="submit" value="Enviar"></input></li>
+                        </ul>
+                    </fieldset>
+                </form>
+            </section>
+            <section id="Internamientos">
+                <form method="post" action="">
+                    <legend>Solicitud de internamiento</legend>
+                    <fieldset>
+                        <ul>
+                            <li><input id="cedula" placeholder="Cedula" type="text"></li>
+                            <li><label>Modo de ingreso: </label></li>
+                            <li>
+                                <ol>
+                                    <li><input type="radio" name="ModoDeIngreso" value="ConsultaExterna"> Consulta externa </li>
+                                    <li><input type="radio" name="ModoDeIngreso" value="Emergencia"> Emergencia </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <textarea id="diagnosticoDeIngreso" name="diagnosticoDeIngreso" rows="10" cols="45" placeholder="Diagnóstico de ingreso"></textarea>
+                            </li>
+                            <li><input id="enviar" type="submit" value="Enviar"></li>
+                        </ul>
+                    </fieldset>
+                </form>
+            </section>
+            <aside id="menuDinamico" class="menuDesplegable"></aside>
+        </main>
+    </body>
+   <script src="js/controladorMenu.js" type="module"></script>
+</html>

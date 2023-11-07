@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --color-fondo: rgb(245, 241, 241);
+    --color-thema: rgb(1, 26, 49); 
+}
+body {
+    background-color: var(--color-fondo);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    background-color: var(--color-thema);
+    color: var(--color-fondo);
+    padding: 1em;
+    overflow: hidden;
+}
+header h1 {
+    float: left;
+    font-size: 26px;
+}
+header figure {
+    float: right;
+}
+main {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: auto;
+    height: 100%;
+    background-color: var(--color-fondo);
+}
+section {
+    position: absolute;
+    top: 0;
+    top: 0;
+    bottom: 0;
+    right: 25%;
+    left: 0;
+    width: 75%;
+    padding: 2em;
+    box-sizing: border-box;
+    visibility: hidden;
+}
+section form {
+
+}
+section form ul {
+
+}
+section form ul li {
+    list-style: none;
+    margin:20px 10px;
+}
+#panelDeCondiciones {
+    overflow: scroll;
+    height: 300px;
+}
+aside {
+    background-color: rgb(1, 13, 24);
+    color: var(--color-fondo);
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 75%;
+    width: 25%;
+    height: 100%;
+    padding: 1em;
+    box-sizing: border-box;
+    visibility: hidden;
+}
+#menuDinamico ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+}
+#menuDinamico ul li {
+    padding: 10px;
+    width: 100%;
+}
+#menuDinamico ul li:hover {
+    background-color: var(--color-fondo);
+    color: var(--color-thema);
+}

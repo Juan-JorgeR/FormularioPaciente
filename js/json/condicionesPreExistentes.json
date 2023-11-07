@@ -1,0 +1,16 @@
+{
+    "condiciones" : [
+        {
+            "nombre" : "cancer"
+        },
+        {
+            "nombre" : "deabetes"
+        },
+        {
+            "nombre" : "Alergia a anestecicos"
+        },
+        {
+            "nombre" : "Ipertención arterial"
+        }
+    ]
+}

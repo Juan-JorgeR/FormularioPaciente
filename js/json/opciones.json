@@ -1,0 +1,22 @@
+{
+    "opciones" : [
+        {
+            "nombre" : "Ingresar Paciente al sistema",
+            "id" : "ingresarPacienteAlSistema",
+            "class" : "opcion",
+            "formularioAsociado" : "DatosPersonales"
+        },
+        {
+            "nombre" : "Condiciones pre-exitentes",
+            "id" : "condicionesPreExitentes",
+            "class" : "opcion",
+            "formularioAsociado" : "CondicionesPreExistentes"
+        },
+        {
+            "nombre" : "Solicitud de internamiento",
+            "id" : "solicitudDeInternamiento",
+            "class" : "opcion",
+            "formularioAsociado" : "Internamientos"
+        }
+    ]
+}
