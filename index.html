@@ -13,7 +13,7 @@
             </figure>
         </header>
         <main>
-            <section id="DatosPersonales">
+            <section id="DatosPersonales" class="seccionFormulario">
                 <form method="post" action="">
                     <legend>Datos Personales</legend>
                     <fieldset>
@@ -36,7 +36,7 @@
                     </fieldset>
                 </form>
             </section>
-            <section id="CondicionesPreExistentes">
+            <section id="CondicionesPreExistentes" class="seccionFormulario">
                 <form method="post" action="">
                     <legend>Condiciones Pre-Existentes</legend>
                     <fieldset>
@@ -50,14 +50,14 @@
                         </div>
                         <ul>
                             <li>
-                                <textarea id="comentario" name="comentario" rows="10" cols="45" placeholder="Leave us a comment."></textarea>
+                                <textarea id="comentario" name="comentario" rows="10" cols="45" placeholder="comentarios"></textarea>
                             </li>
                             <li><input type="submit" value="Enviar"></input></li>
                         </ul>
                     </fieldset>
                 </form>
             </section>
-            <section id="Internamientos">
+            <section id="Internamientos" class="seccionFormulario">
                 <form method="post" action="">
                     <legend>Solicitud de internamiento</legend>
                     <fieldset>
@@ -82,4 +82,5 @@
         </main>
     </body>
    <script src="js/controladorMenu.js" type="module"></script>
+   <script src="js/controladorCondicionesPreExistentes.js" type="module"></script>
 </html>

@@ -26,14 +26,15 @@ function manejadorVisualizacionMenu() {
     }
 }
 function desplegarFormulario(e) {
-    let seccionFormulario = e.target;
+    let seccionesFormulario = document.querySelectorAll('.seccionFormulario');
 
-    console.log(seccionFormulario.getAttribute("formularioAsociado"));
-    opciones.forEach(opcion => {
-        if(opcion.getAttribute("formularioAsociado") == opcion.getAttribute("id"))
-            seccionFormulario.style.visibility = "visible";
-        seccionFormulario.style.visibility = "hidden";
-    });
+    for(let seccion of seccionesFormulario) {
+        if(seccion.getAttribute("id") == e.target.getAttribute("formularioAsociado"))
+            seccion.style.visibility = "visible";
+        else {
+            seccion.style.visibility = "hidden";
+        }
+    }
 }
 function generarMenu() {
     let listaOpciones = document.createElement('ul');
